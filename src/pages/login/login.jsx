@@ -1,11 +1,11 @@
 import React from 'react'
 import { Form, Input } from 'antd'
-// import './style.scss'
+import './style.scss'
 
 const Login = (props) => {
   return (
     <div className='loginBg'>
-      <Form>
+      <Form className='loginForm'>
         <Form.Item label='Email'>
           <Input />
         </Form.Item>
