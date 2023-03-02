@@ -6,13 +6,13 @@ import './style.scss'
 const Login = (props) => {
   return (
     <div className='loginBg'>
-      <Form className='loginForm'>
+      <Form className='login_form'>
         <Typography.Text>LogIn</Typography.Text>
         <Form.Item label=''>
-          <Input prefix={<UserOutlined className='site-form-item-icon' />} placeholder='Username' />
+          <Input className='login_input' prefix={<UserOutlined className='login-item-icon' />} placeholder='Username' />
         </Form.Item>
         <Form.Item label=''>
-          <Input prefix={<LockOutlined className='site-form-item-icon' />} type='password' placeholder='Password' />
+          <Input className='login_input' prefix={<LockOutlined className='login-item-icon' />} type='password' placeholder='Password' />
         </Form.Item>
         <Form.Item shouldUpdate>
           {() => (
