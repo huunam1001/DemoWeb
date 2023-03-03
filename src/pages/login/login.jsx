@@ -6,7 +6,7 @@ import './style.scss'
 const Login = (props) => {
   return (
     <div className='loginBg'>
-      <Form className='login_form'>
+      <Form className='login-form'>
         <Typography.Text>LogIn Here</Typography.Text>
         <Form.Item label=''>
           <Input className='login_input' prefix={<UserOutlined className='login-item-icon' />} placeholder='Username' />
@@ -22,6 +22,7 @@ const Login = (props) => {
         <Form.Item shouldUpdate>
           {() => (
             <Button
+              className='login_button'
               type='primary'
               htmlType='submit'
               // disabled={
