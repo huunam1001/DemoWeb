@@ -1,13 +1,14 @@
 import React from 'react'
-import { Form, Input, Button, Typography } from 'antd'
+import { Form, Input, Button, Typography, Space } from 'antd'
 import { UserOutlined, LockOutlined } from '@ant-design/icons'
 import './style.scss'
+const { Title } = Typography
 
 const Login = (props) => {
   return (
     <div className='loginBg'>
       <Form className='login-form'>
-        <Typography.Text>LogIn Here</Typography.Text>
+        <Title level={1}>Login now</Title>
         <Form.Item label=''>
           <Input className='login_input' prefix={<UserOutlined className='login-item-icon' />} placeholder='Username' />
         </Form.Item>
@@ -19,6 +20,7 @@ const Login = (props) => {
             placeholder='Password'
           />
         </Form.Item>
+        <Space></Space>
         <Form.Item shouldUpdate>
           {() => (
             <Button
