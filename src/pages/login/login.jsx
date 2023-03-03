@@ -7,12 +7,17 @@ const Login = (props) => {
   return (
     <div className='loginBg'>
       <Form className='login_form'>
-        <Typography.Text>LogIn</Typography.Text>
+        <Typography.Text>LogIn Here</Typography.Text>
         <Form.Item label=''>
           <Input className='login_input' prefix={<UserOutlined className='login-item-icon' />} placeholder='Username' />
         </Form.Item>
         <Form.Item label=''>
-          <Input className='login_input' prefix={<LockOutlined className='login-item-icon' />} type='password' placeholder='Password' />
+          <Input
+            className='login_input'
+            prefix={<LockOutlined className='login-item-icon' />}
+            type='password'
+            placeholder='Password'
+          />
         </Form.Item>
         <Form.Item shouldUpdate>
           {() => (

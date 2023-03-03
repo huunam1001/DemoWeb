@@ -10,6 +10,11 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
+  devServer: {
+    compress: true,
+    host: '0.0.0.0',
+    port: 3000
+  },
   module: {
     rules: [
       {
