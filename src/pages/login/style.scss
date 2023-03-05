@@ -18,15 +18,21 @@
   align-items: center;
   box-shadow: 0px 8px 32px 0px;
   backdrop-filter: blur(3px);
+  min-width: 300px;
   width: 30%;
   padding: 16px;
   border-radius: 16px;
 }
 
 .container {
-
   align-items: center;
   justify-content: center;
+}
+
+.title {
+  color: #c6c4c4;
+  font-size: 20px;
+  text-align: center;
 }
 
 .login_input {
@@ -37,22 +43,27 @@
   padding-right: 20px;
   input {
     padding-left: 20px;
-    font-weight: 600;
+    font-size: 16px;
+    font-style: bold;
     background-color: #f3f4f8;
     color: #1cabdf;
-    &::placeholder {
-      font-weight: 600;
-    }
   }
 }
 
 .login_button {
   width: 90%;
   height: 50px;
-  background-color:#1cabdf;
-  font-weight: 600;
-  color: #fff;
-  border-radius: 50px;
+  background-color: #1cabdf;
+  border-radius: 25px;
   margin: auto;
   display: block;
+  color: #fff;
+  font-size: 20px;
+  font-style: bold;
+}
+
+.button_title {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
 }

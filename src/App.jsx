@@ -4,7 +4,7 @@ import Home from './pages/home/home'
 import Login from './pages/Login/Login'
 
 const App = (props) => {
-  return <Login />
+  return <Home />
 }
 
 export default App

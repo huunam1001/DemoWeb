@@ -1,11 +1,12 @@
 import React from 'react'
+import { Menu } from 'antd'
+import './style.scss'
 
 const Home = (props) => {
   return (
     <div>
-      <div>fasfadsf</div>
-      <div>fasfadsf</div>
-      <div>fasfadsf</div>
+      <Menu className='main_menu' items={[{ label: 'Dashboard' }, { label: 'Booking' }, { label: 'Shipment' }]}></Menu>
+      <div>Content</div>
     </div>
   )
 }

@@ -8,7 +8,7 @@ const Login = (props) => {
   return (
     <div className='loginBg'>
       <Form className='login-form'>
-        <Title level={1}>Login now</Title>
+        <h3 className='title'>Login to system</h3>
         <Form.Item label=''>
           <Input className='login_input' prefix={<UserOutlined className='login-item-icon' />} placeholder='Username' />
         </Form.Item>
@@ -23,16 +23,8 @@ const Login = (props) => {
         <Space></Space>
         <Form.Item shouldUpdate>
           {() => (
-            <Button
-              className='login_button'
-              type='primary'
-              htmlType='submit'
-              // disabled={
-              //   !form.isFieldsTouched(true) ||
-              //   !!form.getFieldsError().filter(({ errors }) => errors.length).length
-              // }
-            >
-              Log in
+            <Button className='login_button' type='primary' htmlType='submit'>
+              <h3 className='button_title'>Login</h3>
             </Button>
           )}
         </Form.Item>
