@@ -1,6 +1,8 @@
 import React from 'react'
 import { Layout, Menu } from 'antd'
+import { Routes, Route } from 'react-router-dom'
 import './style.scss'
+import Category from '../category'
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
@@ -26,12 +28,12 @@ const Home = (props) => {
               {
                 key: '1',
                 icon: <UserOutlined />,
-                label: 'nav 1'
+                label: 'Category'
               },
               {
                 key: '2',
                 icon: <VideoCameraOutlined />,
-                label: 'nav 2'
+                label: 'Products'
               },
               {
                 key: '3',
@@ -50,7 +52,9 @@ const Home = (props) => {
               background: 'red'
             }}
           >
-            Content
+            <Routes>
+              <Route path='/' element={<Category />}></Route>
+            </Routes>
           </Content>
         </Layout>
       </Layout>
