@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout, Menu } from 'antd'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import './style.scss'
 import Category from '../category'
 import {
@@ -14,6 +14,7 @@ import {
 const { Header, Sider, Content } = Layout
 
 const Home = (props) => {
+  const navigate = useNavigate()
   return (
     <Layout>
       <Header className='header'></Header>
@@ -23,15 +24,18 @@ const Home = (props) => {
           <Menu
             theme='light'
             mode='inline'
-            defaultSelectedKeys={['1']}
+            defaultSelectedKeys={['/categories']}
+            onClick={({ key }) => {
+              navigate(key)
+            }}
             items={[
               {
-                key: '1',
+                key: '/categories',
                 icon: <UserOutlined />,
                 label: 'Category'
               },
               {
-                key: '2',
+                key: '/products',
                 icon: <VideoCameraOutlined />,
                 label: 'Products'
               },
@@ -53,7 +57,8 @@ const Home = (props) => {
             }}
           >
             <Routes>
-              <Route path='/' element={<Category />}></Route>
+              <Route path='/categories' element={<Category />}></Route>
+              <Route path='/products' element={<div>products</div>}></Route>
             </Routes>
           </Content>
         </Layout>
